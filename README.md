@@ -34,7 +34,7 @@ Note: THe only mismatch with 2019 spatial data is that Hackney and City of Londo
 Since the covid dataset we get has only the local authority districts, we need data to map the distrcits to their respective countries.
 For this, again 2019 mapping data was the suitable one. [https://geoportal.statistics.gov.uk/datasets/5b80bff593974bf8b6dbf080a6057b09_0]
 
-# STEP 2: Google Sheet and Google Script
+# STEP 2: Downloading covid data via API through R
 Next step is to use javascript code to request the covid data from Gov UK API and store it as a table in a Google sheet.
 The entire javascript I used can be found here [https://github.com/karthikkumar001/Live-Covid-19-Dashboard-with-UK-Gov-data/blob/main/UK%20Gov%20covid%2019%20data%20request.js]
 It can be seen that the request has 'filter'and 'structure' componenet mentioned on the UK Gov site's developer guide. 
