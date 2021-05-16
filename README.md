@@ -2,7 +2,7 @@
 
 # Building a Covid 19 dashboard which updates regularly with Google sheets and Tableau
 
-<img src="https://github.com/Blindusername001/Self-Updating-Covid-19-Dashboard-with-UK-Gov-data/blob/main/Files_used_for_Read_Me_Doc/u8.gif" width="1000" height="480"/>
+<img src="https://github.com/Blindusername001/Self-Updating-Covid-19-Dashboard-with-UK-Gov-data/blob/main/Files_used_for_Read_Me_Doc/u8.gif" width="1000" height="300"/>
 
 The outline is to get UK covid data from UK Gov's web API using R and then use Tableau to create a dashboard containing KPI details.
 Our aim is to downlaod the recent 7 days of data and create a dashboard showing,
@@ -13,7 +13,7 @@ Our aim is to downlaod the recent 7 days of data and create a dashboard showing,
 
 # STEP 1: Getting data from UK Gov website
 
-<img src="https://github.com/karthikkumar001/Live-Covid-19-Dashboard-with-UK-Gov-data/blob/main/Files_used_for_Read_Me_Doc/Image%20for%20first%20step.png" width="450" height="100"/>
+<img src="https://github.com/karthikkumar001/Live-Covid-19-Dashboard-with-UK-Gov-data/blob/main/Files_used_for_Read_Me_Doc/Image%20for%20first%20step.png" width="450" height="250"/>
 
 
 ## Covid dataset at Local Authority Level
