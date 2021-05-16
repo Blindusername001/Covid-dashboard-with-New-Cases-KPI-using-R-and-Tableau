@@ -11,11 +11,6 @@ Our aim is to downlaod the recent 7 days of data and create a dashboard showing,
 3. KPI showing the day to day increase in new cases (current vs previous day)
 
 
-<img src="/Files_used_for_Read_Me_Doc/Process%20outline.png" width="600" height="500"/>
-
-
-Though it sounds simple, there are a few challenges to overcome which are detailed in the below sections.
-
 # STEP 1: Getting data from UK Gov website
 
 <img src="https://github.com/karthikkumar001/Live-Covid-19-Dashboard-with-UK-Gov-data/blob/main/Files_used_for_Read_Me_Doc/Image%20for%20first%20step.png" width="450" height="250"/>
