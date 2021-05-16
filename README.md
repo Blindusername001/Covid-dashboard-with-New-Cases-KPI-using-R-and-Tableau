@@ -13,7 +13,7 @@ Our aim is to downlaod the recent 7 days of data and create a dashboard showing,
 
 # STEP 1: Getting data from UK Gov website
 
-<img src="https://github.com/karthikkumar001/Live-Covid-19-Dashboard-with-UK-Gov-data/blob/main/Files_used_for_Read_Me_Doc/Image%20for%20first%20step.png" width="450" height="250"/>
+<img src="https://github.com/karthikkumar001/Live-Covid-19-Dashboard-with-UK-Gov-data/blob/main/Files_used_for_Read_Me_Doc/Image%20for%20first%20step.png" width="450" height="150"/>
 
 
 ## Covid dataset at Local Authority Level
