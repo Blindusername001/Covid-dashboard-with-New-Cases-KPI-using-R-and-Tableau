@@ -2,15 +2,13 @@
 
 # Building a Covid 19 dashboard which updates regularly with Google sheets and Tableau
 
-Building the below Tableau dashboard with data from UK government website [https://coronavirus.data.gov.uk/details/about-data].
-What's different is, we're building a data pipeline which gets the latest data weekly automatically without manual intervention.
-This was done with the help of Google sheets and Google scripts.
+<img src="https://github.com/Blindusername001/Self-Updating-Covid-19-Dashboard-with-UK-Gov-data/blob/main/Files_used_for_Read_Me_Doc/u8.gif" width="1000" height="480"/>
 
-<img src="/Files_used_for_Read_Me_Doc/c19uk.gif" width="1000" height="480"/>
-
-
-The outline is to use Google scripts (javascript code) and Trigger functionality in Google scripts to get latest covid data from UK Gov website into a Google sheet.
-We will use this google sheet as the source for our Tableau dashboard.
+The outline is to get UK covid data from UK Gov's web API using R and then use Tableau to create a dashboard containing KPI details.
+Our aim is to downlaod the recent 7 days of data and create a dashboard showing,
+1. country level new cases (England, Wales, Scotland, Northern Ireland) 
+2. ltla level new cases
+3. KPI showing the day to day increase in new cases (current vs previous day)
 
 
 <img src="/Files_used_for_Read_Me_Doc/Process%20outline.png" width="600" height="500"/>
