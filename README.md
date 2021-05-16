@@ -1,7 +1,5 @@
 # Covid-dashboard-with-KPI-using-R-and-Tableau
 
-# Building a Covid 19 dashboard which updates regularly with Google sheets and Tableau
-
 <img src="https://github.com/Blindusername001/Self-Updating-Covid-19-Dashboard-with-UK-Gov-data/blob/main/Files_used_for_Read_Me_Doc/u8.gif" width="1000" height="350"/>
 
 The outline is to get UK covid data from UK Gov's web API using R and then use Tableau to create a dashboard containing KPI details.
@@ -35,19 +33,18 @@ Since the covid dataset we get has only the local authority districts, we need d
 For this, again 2019 mapping data was the suitable one. [https://geoportal.statistics.gov.uk/datasets/5b80bff593974bf8b6dbf080a6057b09_0]
 
 # STEP 2: Downloading covid data via API through R
-Next step is to use javascript code to request the covid data from Gov UK API and store it as a table in a Google sheet.
-The entire javascript I used can be found here [https://github.com/karthikkumar001/Live-Covid-19-Dashboard-with-UK-Gov-data/blob/main/UK%20Gov%20covid%2019%20data%20request.js]
-It can be seen that the request has 'filter'and 'structure' componenet mentioned on the UK Gov site's developer guide. 
-The javascript requests the data and saves it in a google sheet.
-Below is an exceprt of the data in google sheet.
 
-<img src="https://github.com/karthikkumar001/Live-Covid-19-Dashboard-with-UK-Gov-data/blob/main/Files_used_for_Read_Me_Doc/Google%20sheet%20data.png" width="900" height="200"/>
+First, we install the api sdk using the install_github command that is part of devtools package in R,
+install_github("publichealthengland/coronavirus-dashboard-api-R-sdk")
 
-After this, we should create a Trigger for the script to run once a week and refresh this data.
-To keep the entore process clean and simple, my script clears the sheet prior to pasting new data in it. So anytime the script runs and gets a response, only the latest data will be available in the Google sheet.
-Below is a screenshot of the trigger for my script.
+To request data, the query has to be structured with two components,
+1. the filters to be used
+2. the parameters or the fields which we require
 
-<img src="https://github.com/karthikkumar001/Live-Covid-19-Dashboard-with-UK-Gov-data/blob/main/Files_used_for_Read_Me_Doc/Google%20script%20trigger.png" width="300" height="200"/>
+These can be viewed in the R code,
+[https://github.com/Blindusername001/Covid-dashboard-with-New-Cases-KPI-using-R-and-Tableau/blob/main/R%20code/ukcovid19%20api%20code.R]
+
+Once requested, data is returned as a dataframe. The code uses 7 requests to request data for 7 days. 
 
 
 # STEP 3: Building the dashboard in Tableau
