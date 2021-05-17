@@ -54,37 +54,72 @@ Import and relate the three datasets mentioned in Step 1 using the local authori
 
 Form a small table using circles in the Marks area as below to display [new cases on publish date] value for the latest date. The latest date can be programmed through the 'top' option in filter properties.
 
+<img src="https://github.com/Blindusername001/Covid-dashboard-with-New-Cases-KPI-using-R-and-Tableau/blob/main/Pics_for_README_file/b2.png" width="250" height="250"/>
+
+
+<img src="https://github.com/Blindusername001/Covid-dashboard-with-New-Cases-KPI-using-R-and-Tableau/blob/main/Pics_for_README_file/1.png" width="250" height="250"/>
+
+
+
 Next, create a basic line graph showing the level of cases across 7 days at a country level. Add the average line as reference to provide more intuition.
+
+<img src="https://github.com/Blindusername001/Covid-dashboard-with-New-Cases-KPI-using-R-and-Tableau/blob/main/Pics_for_README_file/2.png" width="250" height="250"/>
 
 
 ## Area (ltla) level map data
 
 Create a calculated field called [newCasesOnMaxDate] to always provided [new cases on publish date] values on the max(date) in our dataset.
 
-
+<img src="https://github.com/Blindusername001/Covid-dashboard-with-New-Cases-KPI-using-R-and-Tableau/blob/main/Pics_for_README_file/b1.png" width="250" height="250"/>
 
 Create a map visualization using the shape file downloaded above. Add [Area Name] to details and use [newCasesOnMaxDate] field to color the map.
+
+<img src="https://github.com/Blindusername001/Covid-dashboard-with-New-Cases-KPI-using-R-and-Tableau/blob/main/Pics_for_README_file/3.png" width="250" height="250"/>
 
 
 ## Area (ltla) level KPI
 
 This needs creation of multiple calculated fields,
 1. [newCasesOnPrevDate] - to give the [new cases on publish date] values on previous date (compared to the latest date)
-2. [currentVsPrevDay] - to give the difference between sum([newCasesOnMaxDate]) - sum([newCasesOnPrevDate])
-3. [currentVsPrevDay%] - to give the percentage difference [(sum([newCasesOnMaxDate]) - sum([newCasesOnPrevDate]))/sum([newCasesOnPrevDate])]
-4. [downArrow], [upArrow] - these are required for displaying an arrow corresponding to the percentage change specifying if there was an increase or decrease. For this the geometric shape symbol has to be copy pasted either from MS Word or from any other online resouce [https://en.wikipedia.org/wiki/Geometric_Shapes]
+
+<img src="https://github.com/Blindusername001/Covid-dashboard-with-New-Cases-KPI-using-R-and-Tableau/blob/main/Pics_for_README_file/c1.png" width="250" height="250"/>
+
+3. [currentVsPrevDay] - to give the difference between sum([newCasesOnMaxDate]) - sum([newCasesOnPrevDate])
+
+<img src="https://github.com/Blindusername001/Covid-dashboard-with-New-Cases-KPI-using-R-and-Tableau/blob/main/Pics_for_README_file/c2.png" width="250" height="250"/>
+
+5. [currentVsPrevDay%] - to give the percentage difference [(sum([newCasesOnMaxDate]) - sum([newCasesOnPrevDate]))/sum([newCasesOnPrevDate])]
+
+<img src="https://github.com/Blindusername001/Covid-dashboard-with-New-Cases-KPI-using-R-and-Tableau/blob/main/Pics_for_README_file/c3.png" width="250" height="250"/>
+
+7. [downArrow], [upArrow] - these are required for displaying an arrow corresponding to the percentage change specifying if there was an increase or decrease. For this the geometric shape symbol has to be copy pasted either from MS Word or from any other online resouce [https://en.wikipedia.org/wiki/Geometric_Shapes]
+
+<img src="https://github.com/Blindusername001/Covid-dashboard-with-New-Cases-KPI-using-R-and-Tableau/blob/main/Pics_for_README_file/c4.png" width="250" height="250"/>
+
+<img src="https://github.com/Blindusername001/Covid-dashboard-with-New-Cases-KPI-using-R-and-Tableau/blob/main/Pics_for_README_file/c5.png" width="250" height="250"/>
 
 After creating the calculated fields, use Text in the Marks options and edit Label option to format the KPI as required.
+
+
+<img src="https://github.com/Blindusername001/Covid-dashboard-with-New-Cases-KPI-using-R-and-Tableau/blob/main/Pics_for_README_file/kpi.png" width="250" height="250"/>
+
+
 
 ## Are (ltla) level line graph
 
 Create a simple line graph to display the [new cases on publish date] values across the 7 days
 
+<img src="https://github.com/Blindusername001/Covid-dashboard-with-New-Cases-KPI-using-R-and-Tableau/blob/main/Pics_for_README_file/a1.png" width="250" height="250"/>
 
 ## Dashboard:
 Create the dashboard with the above components. 
 Use Action Filters to make the Dashboard interactive.
 It is also advisable to use a dynamic title for shets on the dashboard to avoid confusions when filtering.
+
+
+<img src="https://github.com/Blindusername001/Covid-dashboard-with-New-Cases-KPI-using-R-and-Tableau/blob/main/Pics_for_README_file/dash.png"/>
+
+
 
 This can be interactively viewed on,
 https://public.tableau.com/profile/karthik.kumar8709#!/vizhome/UK_Covid19_KPI_Dashboard_R_Tableau/Dashboard1
