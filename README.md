@@ -50,30 +50,44 @@ Once requested, data is returned as a dataframe. The code uses 7 requests to req
 # STEP 3: Building the dashboard in Tableau
 Import and relate the three datasets mentioned in Step 1 using the local authority code.
 
-## worksheet 1
-Build a worksheet to show country level data. The image below has details on building it.
+## country level data
 
-<img src="https://github.com/karthikkumar001/Live-Covid-19-Dashboard-with-UK-Gov-data/blob/main/Files_used_for_Read_Me_Doc/worksheet-1.png" width="400" height="250"/>
+Form a small table using circles in the Marks area as below to display [new cases on publish date] value for the latest date. The latest date can be programmed through the 'top' option in filter properties.
 
-## worksheet 2
-Build a worksheet showing local authority districts and cumulative, new cases in each district.
-We will be using the spatial file from geoportal.statistics.gov.uk in this worksheet.
-When building this, we have to create,
-1. 4 calculated parameters, one for each country and use each in a map layer before merging all 4 map layers
-2. A calculated parameter for Max date so that we can dynamically update the dashboard title with the date of dataset
+Next, create a basic line graph showing the level of cases across 7 days at a country level. Add the average line as reference to provide more intuition.
 
 
-<img src="https://github.com/karthikkumar001/Live-Covid-19-Dashboard-with-UK-Gov-data/blob/main/Files_used_for_Read_Me_Doc/worksheet%202.png" width="400" height="200"/>
+## Area (ltla) level map data
+
+Create a calculated field called [newCasesOnMaxDate] to always provided [new cases on publish date] values on the max(date) in our dataset.
+
+![image](https://user-images.githubusercontent.com/72069602/118417743-62e98280-b6ad-11eb-9466-1012fbcde128.png)
 
 
-## Worksheets 3 and 4:
-Build bar graphs for cumulative and new cases by local authority districts
+Create a map visualization using the shape file downloaded above. Add [Area Name] to details and use [newCasesOnMaxDate] field to color the map.
 
-<img src="https://github.com/karthikkumar001/Live-Covid-19-Dashboard-with-UK-Gov-data/blob/main/Files_used_for_Read_Me_Doc/worksheet3%264.png" width="400" height="200"/>
+
+## Area (ltla) level KPI
+
+This needs creation of multiple calculated fields,
+1. [newCasesOnPrevDate] - to give the [new cases on publish date] values on previous date (compared to the latest date)
+2. [currentVsPrevDay] - to give the difference between sum([newCasesOnMaxDate]) - sum([newCasesOnPrevDate])
+3. [currentVsPrevDay%] - to give the percentage difference [(sum([newCasesOnMaxDate]) - sum([newCasesOnPrevDate]))/sum([newCasesOnPrevDate])]
+4. [downArrow], [upArrow] - these are required for displaying an arrow corresponding to the percentage change specifying if there was an increase or decrease. For this the geometric shape symbol has to be copy pasted either from MS Word or from any other online resouce [https://en.wikipedia.org/wiki/Geometric_Shapes]
+
+After creating the calculated fields, use Text in the Marks options and edit Label option to format the KPI as required.
+
+## Are (ltla) level line graph
+
+Create a simple line graph to display the [new cases on publish date] values across the 7 days
+
 
 ## Dashboard:
-Create the dashboard with the four worksheets and add a dynamically updating title
-This can be interactively viewed on,
-https://public.tableau.com/shared/QG6X2K3FM?:display_count=y&:origin=viz_share_link
+Create the dashboard with the above components. 
+Use Action Filters to make the Dashboard interactive.
+It is also advisable to use a dynamic title for shets on the dashboard to avoid confusions when filtering.
 
-<img src="https://github.com/karthikkumar001/Live-Covid-19-Dashboard-with-UK-Gov-data/blob/main/Files_used_for_Read_Me_Doc/dashboard.png" width="400" height="200"/>
+This can be interactively viewed on,
+https://public.tableau.com/profile/karthik.kumar8709#!/vizhome/UK_Covid19_KPI_Dashboard_R_Tableau/Dashboard1
+
+
