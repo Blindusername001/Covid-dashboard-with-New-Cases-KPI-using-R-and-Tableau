@@ -74,7 +74,7 @@ Create a calculated field called [newCasesOnMaxDate] to always provided [new cas
 
 Create a map visualization using the shape file downloaded above. Add [Area Name] to details and use [newCasesOnMaxDate] field to color the map.
 
-<img src="https://github.com/Blindusername001/Covid-dashboard-with-New-Cases-KPI-using-R-and-Tableau/blob/main/Pics_for_README_file/3.png" width="800" height="700"/>
+<img src="https://github.com/Blindusername001/Covid-dashboard-with-New-Cases-KPI-using-R-and-Tableau/blob/main/Pics_for_README_file/3.png" width="800" height="550"/>
 
 
 ## Area (ltla) level KPI
