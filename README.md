@@ -82,26 +82,26 @@ Create a map visualization using the shape file downloaded above. Add [Area Name
 This needs creation of multiple calculated fields,
 1. [newCasesOnPrevDate] - to give the [new cases on publish date] values on previous date (compared to the latest date)
 
-<img src="https://github.com/Blindusername001/Covid-dashboard-with-New-Cases-KPI-using-R-and-Tableau/blob/main/Pics_for_README_file/c1.png" width="500" height="250"/>
+<img src="https://github.com/Blindusername001/Covid-dashboard-with-New-Cases-KPI-using-R-and-Tableau/blob/main/Pics_for_README_file/c1.png" width="400" height="250"/>
 
 3. [currentVsPrevDay] - to give the difference between sum([newCasesOnMaxDate]) - sum([newCasesOnPrevDate])
 
-<img src="https://github.com/Blindusername001/Covid-dashboard-with-New-Cases-KPI-using-R-and-Tableau/blob/main/Pics_for_README_file/c2.png" width="500" height="250"/>
+<img src="https://github.com/Blindusername001/Covid-dashboard-with-New-Cases-KPI-using-R-and-Tableau/blob/main/Pics_for_README_file/c2.png" width="400" height="250"/>
 
 5. [currentVsPrevDay%] - to give the percentage difference [(sum([newCasesOnMaxDate]) - sum([newCasesOnPrevDate]))/sum([newCasesOnPrevDate])]
 
-<img src="https://github.com/Blindusername001/Covid-dashboard-with-New-Cases-KPI-using-R-and-Tableau/blob/main/Pics_for_README_file/c3.png" width="500" height="250"/>
+<img src="https://github.com/Blindusername001/Covid-dashboard-with-New-Cases-KPI-using-R-and-Tableau/blob/main/Pics_for_README_file/c3.png" width="400" height="250"/>
 
 7. [downArrow], [upArrow] - these are required for displaying an arrow corresponding to the percentage change specifying if there was an increase or decrease. For this the geometric shape symbol has to be copy pasted either from MS Word or from any other online resouce [https://en.wikipedia.org/wiki/Geometric_Shapes]
 
-<img src="https://github.com/Blindusername001/Covid-dashboard-with-New-Cases-KPI-using-R-and-Tableau/blob/main/Pics_for_README_file/c4.png" width="500" height="250"/>
+<img src="https://github.com/Blindusername001/Covid-dashboard-with-New-Cases-KPI-using-R-and-Tableau/blob/main/Pics_for_README_file/c4.png" width="400" height="250"/>
 
-<img src="https://github.com/Blindusername001/Covid-dashboard-with-New-Cases-KPI-using-R-and-Tableau/blob/main/Pics_for_README_file/c5.png" width="500" height="250"/>
+<img src="https://github.com/Blindusername001/Covid-dashboard-with-New-Cases-KPI-using-R-and-Tableau/blob/main/Pics_for_README_file/c5.png" width="400" height="250"/>
 
 After creating the calculated fields, use Text in the Marks options and edit Label option to format the KPI as required.
 
 
-<img src="https://github.com/Blindusername001/Covid-dashboard-with-New-Cases-KPI-using-R-and-Tableau/blob/main/Pics_for_README_file/kpi.png" width="500" height="250"/>
+<img src="https://github.com/Blindusername001/Covid-dashboard-with-New-Cases-KPI-using-R-and-Tableau/blob/main/Pics_for_README_file/kpi.png" width="500" height="350"/>
 
 
 
