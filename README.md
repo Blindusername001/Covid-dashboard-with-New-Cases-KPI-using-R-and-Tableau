@@ -61,7 +61,6 @@ Next, create a basic line graph showing the level of cases across 7 days at a co
 
 Create a calculated field called [newCasesOnMaxDate] to always provided [new cases on publish date] values on the max(date) in our dataset.
 
-![image](https://user-images.githubusercontent.com/72069602/118417743-62e98280-b6ad-11eb-9466-1012fbcde128.png)
 
 
 Create a map visualization using the shape file downloaded above. Add [Area Name] to details and use [newCasesOnMaxDate] field to color the map.
