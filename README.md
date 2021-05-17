@@ -46,6 +46,8 @@ These can be viewed in the R code,
 
 Once requested, data is returned as a dataframe. The code uses 7 requests to request data for 7 days. 
 
+Note: This data can also be retreived through python. The python code can be found here,
+[https://github.com/Blindusername001/Covid-dashboard-with-New-Cases-KPI-using-R-and-Tableau/blob/main/Python%20Code/Python%20Code%20for%20ukcovid19API.py]
 
 # STEP 3: Building the dashboard in Tableau
 Import and relate the three datasets mentioned in Step 1 using the local authority code.
