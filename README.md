@@ -63,18 +63,18 @@ Form a small table using circles in the Marks area as below to display [new case
 
 Next, create a basic line graph showing the level of cases across 7 days at a country level. Add the average line as reference to provide more intuition.
 
-<img src="https://github.com/Blindusername001/Covid-dashboard-with-New-Cases-KPI-using-R-and-Tableau/blob/main/Pics_for_README_file/2.png" width="500" height="250"/>
+<img src="https://github.com/Blindusername001/Covid-dashboard-with-New-Cases-KPI-using-R-and-Tableau/blob/main/Pics_for_README_file/2.png" width="650" height="250"/>
 
 
 ## Area (ltla) level map data
 
 Create a calculated field called [newCasesOnMaxDate] to always provided [new cases on publish date] values on the max(date) in our dataset.
 
-<img src="https://github.com/Blindusername001/Covid-dashboard-with-New-Cases-KPI-using-R-and-Tableau/blob/main/Pics_for_README_file/b1.png" width="500" height="250"/>
+<img src="https://github.com/Blindusername001/Covid-dashboard-with-New-Cases-KPI-using-R-and-Tableau/blob/main/Pics_for_README_file/b1.png" width="400" height="250"/>
 
 Create a map visualization using the shape file downloaded above. Add [Area Name] to details and use [newCasesOnMaxDate] field to color the map.
 
-<img src="https://github.com/Blindusername001/Covid-dashboard-with-New-Cases-KPI-using-R-and-Tableau/blob/main/Pics_for_README_file/3.png" width="500" height="250"/>
+<img src="https://github.com/Blindusername001/Covid-dashboard-with-New-Cases-KPI-using-R-and-Tableau/blob/main/Pics_for_README_file/3.png" width="800" height="700"/>
 
 
 ## Area (ltla) level KPI
