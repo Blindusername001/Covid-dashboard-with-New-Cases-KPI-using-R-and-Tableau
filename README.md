@@ -54,10 +54,10 @@ Import and relate the three datasets mentioned in Step 1 using the local authori
 
 Form a small table using circles in the Marks area as below to display [new cases on publish date] value for the latest date. The latest date can be programmed through the 'top' option in filter properties.
 
-<img src="https://github.com/Blindusername001/Covid-dashboard-with-New-Cases-KPI-using-R-and-Tableau/blob/main/Pics_for_README_file/b2.png" width="500" height="250"/>
+<img src="https://github.com/Blindusername001/Covid-dashboard-with-New-Cases-KPI-using-R-and-Tableau/blob/main/Pics_for_README_file/b2.png" width="650" height="250"/>
 
 
-<img src="https://github.com/Blindusername001/Covid-dashboard-with-New-Cases-KPI-using-R-and-Tableau/blob/main/Pics_for_README_file/1.png" width="500" height="250"/>
+<img src="https://github.com/Blindusername001/Covid-dashboard-with-New-Cases-KPI-using-R-and-Tableau/blob/main/Pics_for_README_file/1.png" width="650" height="250"/>
 
 
 
