@@ -124,6 +124,6 @@ It is also advisable to use a dynamic title for shets on the dashboard to avoid 
 
 
 This can be interactively viewed on,
-https://public.tableau.com/profile/karthik.kumar8709#!/vizhome/UK_Covid19_KPI_Dashboard_R_Tableau/Dashboard1
+https://public.tableau.com/app/profile/karthik.kumar6284/viz/UK_Covid19_Dashboard/Dashboard1
 
 
